@@ -6,12 +6,9 @@ import random
 from replit import db
 from keep_alive import keep_alive
 
-------------------------------------
-
 #Please check keep_alive.py because we use it for making our Bot work 24 hours a Day
 #I used uptime robot to send a Ping every 5 minutes so the Bot keeps working! check https://uptimerobot.com
 #read the uptime robot file for more information
-------------------------------------
 
 print('logging...')
 #discord.ActivityType.watching()
@@ -135,5 +132,5 @@ async def on_message(message):
       await message.channel.send("Responding is [OFF].") 
 
 keep_alive()
-client.run(os.getenv('nheni')) 
+client.run(os.getenv('DISCORD_TOKEN')) 
 
